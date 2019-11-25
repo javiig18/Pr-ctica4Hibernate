@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="aad.modelo.Direccion" table="Direccion">
+   <id name="direccion_Id" type="int">
+			<column name="DIRECCION_ID" />
+			<generator class="identity" />
+		</id>
+  <property column="calle" generated="never" lazy="false" name="calle"/>
+  <property column="numero" generated="never" lazy="false" name="numero"/>
+  <property column="poblacion" generated="never" lazy="false" name="poblacion"/>
+  <property column="provincia" generated="never" lazy="false" name="provincia"/>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19-may-2015 8:53:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+ <class name="aad.modelo.Profesor" table="Profesor">
+ 		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+  <many-to-one name="direccion" column="direccion_Id" unique="true" cascade="all" not-null="true" />
+  <property column="nombre" name="nombre"/>
+  <property column="ape1"  name="ape1"/>
+  <property column="ape2"  name="ape2"/>
+  <many-to-one name="modulo" column="modulo_Id" unique="true" cascade="all" not-null="true" />
+  <bag name = "correos" table = "Correo" cascade = "all" lazy = "false" order-by = "fecha">
+  	<key column = "profesor_Id" not-null = "true"></key>
+  	<one-to-many class ="aad.modelo.Correo"/> 
+  
+  </bag>
+
+ </class>
+</hibernate-mapping>
