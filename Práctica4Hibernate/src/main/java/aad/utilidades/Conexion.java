@@ -35,6 +35,7 @@ public void closeConnection(Connection con) {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			//cerrada la conexion
 		}
 	}
 }
