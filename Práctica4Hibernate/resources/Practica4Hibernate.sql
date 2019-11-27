@@ -19,11 +19,11 @@
 -- Table structure for table `Cliente`
 --
 
-drop database if exists Practica4Hibernate;
+drop database if exists hibernate_test;
 
-create database Practica4Hibernate;
+create database hibernate_test;
 
-use Practica4Hibernate;
+use hibernate_test;
 
 DROP TABLE IF EXISTS `Cliente`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
