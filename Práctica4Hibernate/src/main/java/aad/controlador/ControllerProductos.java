@@ -1,6 +1,7 @@
 package aad.controlador;
 
 
+import aad.modelo.ProductoDAO;
 
 public class ControllerProductos {
 ProductoDAO productoController = new ProductoJDBC();

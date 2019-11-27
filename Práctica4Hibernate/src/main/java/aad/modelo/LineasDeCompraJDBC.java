@@ -9,6 +9,7 @@ public class LineasDeCompraJDBC implements LineasDeCompraDAO{
         LineasDeCompra producto = new LineasDeCompra(idProducto,idVenta,precioProducto);
 
 
+        return null;
     }
 
     public LineasDeCompra editarLineaDC(LineasDeCompra linea) {
