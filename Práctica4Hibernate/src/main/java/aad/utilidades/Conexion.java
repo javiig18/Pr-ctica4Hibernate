@@ -36,6 +36,7 @@ public void closeConnection(Connection con) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			//cerrada la conexion
+			//jooo
 		}
 	}
 }
