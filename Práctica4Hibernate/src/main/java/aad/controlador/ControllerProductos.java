@@ -13,5 +13,4 @@ public Producto crearProducto(String nombre,float precio,int stock) {
 	return productoController.crearProducto(nombre, precio, stock);
 }
 
-
 }
