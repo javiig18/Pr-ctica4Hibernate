@@ -38,6 +38,10 @@ public class Producto {
 		this.stock = stock;
 	}
 
+	public Producto() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public long getIdProducto() {
 		return idProducto;
 	}
