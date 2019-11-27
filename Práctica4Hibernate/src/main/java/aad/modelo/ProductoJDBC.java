@@ -15,6 +15,7 @@ public class ProductoJDBC implements ProductoDAO{
 
 	public Producto crearProducto(String nombre, float precio, int stock) {
 		Session session = Utilidades.getSessionFactory().openSession();
+		
 		Transaction tx = null;
 		Producto p1 = new Producto();
 		
