@@ -1,5 +1,5 @@
 package aad.modelo;
 
-public class LineasDeCompraJDBC {
-
+public class LineasDeCompraJDBC implements LineasDeCompraDAO{
+	
 }
