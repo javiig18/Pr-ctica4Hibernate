@@ -13,6 +13,12 @@ public class LineasDeCompra {
 		this.precioProducto = precioProducto;
 	}
 
+	public LineasDeCompra(long idProducto, long idVenta, float precioProducto) {
+		this.idProducto = idProducto;
+		this.idVenta = idVenta;
+		this.precioProducto = precioProducto;
+	}
+
 	public long getIdLineaCompra() {
 		return idLineaCompra;
 	}
